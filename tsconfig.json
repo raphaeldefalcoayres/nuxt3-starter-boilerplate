@@ -1,0 +1,20 @@
+{
+  // https://v3.nuxtjs.org/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"],
+      "@/*": ["./*"]
+    },
+    "types": [
+      "nuxt-windicss",
+      "@vueuse/nuxt",
+    ],
+  },
+  "exclude": ["node_modules", ".nuxt", "dist"]
+}
